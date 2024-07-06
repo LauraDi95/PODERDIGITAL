@@ -117,6 +117,7 @@ header ul li{
     width: 350px; 
     height: 200px;
     margin: 5px 5px 5px 5px;
+    border-radius: 50px;
     border-style:double; color:rgb(238, 13, 163);
 }
 .mujeres{
