@@ -1,186 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Playwrite+US+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
 
-header{
-    display: flex;
-    flex-direction: row;
-    background-image: url(./Imagenes/fondo\ lila\ azul.jpg);
-    width: 100%;
-    justify-content:space-between;
+* {
+    margin: 0;
+    padding: 0; 
 }
-header img{
-    width: 150px;
+
+.imagenfondo {
+    background-image: url(./Imagenes/fondo\ mujeres.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 100%;
+}
+
+header {
+    display: flex; 
+    flex-direction: row; 
+}
+  
+header img {
+    width: 150px; 
     height: 150px;
+    filter: blur(1.1);
+    mix-blend-mode: multiply;
+    margin: 0px 0px 0px 0px;
 }
-header ul{
-    list-style: none;
+
+header nav{
     display: flex;
+    width: 100%;
+    height: 150px;
+    background-color:  rgba(255, 192, 203, 0.911);
+    align-content: end;
+ 
+}
+
+header ul {
+    list-style: none; 
+    display: flex; 
     flex-direction: row;
-    
 }
-header ul a{
+header ul a {
     text-decoration: none;
-}
-header ul li{
     display: flex;
-    font-family:cursive; color: white;
-    margin: 100px 25px 5px 25px;
 }
+header ul li {
+  display: flex; 
+  font-family:"Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: black; 
+  margin: 100px 0px 0px 120px;
+}
+
+a li i{
+    display: flex;
+    font-size: large;
+    margin: 15px 15px 15px 15px;
+    color: blueviolet;
+}
+
+.bar a{
+    margin-right: 20px;
+    transition: all 300ms;
+}
+
+.bar a:hover{
+    transform: scale(1.2, 1.2);
+}
+
 
 .poder-digital{
    width: 100%;
-   margin: 10px 0 10px 0;
+   margin: 30px 0px 0px 0px;
    font-family: cursive; color: rgb(250, 55, 136);
    font-size:medium;
-   background-color: rgb(255, 156, 194);
 }
+
 .carrusel{
-    display: flex; justify-content: center; background-image: url(./Imagenes/fondodigital.jpg);
+    display: flex; justify-content: center; 
+    margin: 30px 0px 30px 0px;
+    background-image: url(./Imagenes/fondodigital.jpg); 
 }
 .carrusel img{
-    display: flex;
-    width: 100%;
+    display: flex; width: 450px; height: 450px;
 }
+
 .presentación{
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    margin: 10px 5px 10px 5px;
-    padding: 10px;
-    background-image: url(./Imagenes/fondo\ nube.jpeg);
+    flex-direction: row; 
 }
+
 .caja{
-    width: 100%;
-    height: 100%;
     display: flex;
-    justify-content: center;
+    width: 100%;
     flex-direction: column;
     align-items:center;
-    margin: 5px 5px 5px 5px;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-}
-.caja h1{
-    font-size:xx-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px 
-}
-.caja h2{
-    font-size: xx-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.caja h3{
-    font-size: xx-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.yo h1{
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.yo h2{
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.yo h3{
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.yo h4{
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.yo h5{
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.yo h6{
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    margin: 10px;
-}
-.caja p{
-    display: flex;
-    font-size: small;
-    font-family: "Playwrite US Modern", cursive; tamaño-óptico-de-fuente:automático; peso de fuente: <peso>; estilo de fuente: normal;
-    text-align:start;
-    margin: 10px 10px 10px 10px;
+    margin: 25px 10px 25px 10px;
 }
 .caja img{
     display: flex;
-    justify-content: space-between;
     width: 350px; 
-    height: 200px;
-    margin: 5px 5px 5px 5px;
+    height: 250px;
     border-radius: 50px;
     border-style:double; color:rgb(238, 13, 163);
 }
-.mujeres{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-image: url(./Imagenes/fondo\ brillit.jpg); width: 100%;
-    font-size: x-large;
+.caja h1, h2, h3 {
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
-.mujeress{
+
+.caja h1 {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-image: url(./Imagenes/fondo\ brillit.jpg); width: 100%;
-    font-size: x-large;
+    font-size: xx-large;
+    margin: 30px 0px 10px 0px;
 }
-.mujeresss{
+.caja h2 {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-image: url(./Imagenes/fondo\ brillit.jpg); width: 100%;
-    font-size: x-large;
+    font-size: xx-large;
+    margin: 30px 0px 10px 0px;
 }
-.mujeres img{
+.caja h3 {
+    display: flex;
+    font-size: xx-large;
+    margin: 30px 0px 10px 0px;
+}
+
+.caja p{
+    display: flex;
+    font-size: small;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align:start;
+    margin: 10px 10px 10px 10px;
+}
+button {
+    display: inline-flex;
+    justify-content: center;
+    width: 30px;
+}
+
+.somos{
+    text-align: center; font-family: "Playwrite US Modern", cursive; color: black; font-size: large; 
+    margin: 25px 10px 25px 10px;
+}
+
+.somos i{
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    margin: 15px 15px 15px 15px;
+    color: blueviolet;
+}
+
+.id {
     display: flex;
     justify-content: center;
-    margin: 10px 5px 10px 5px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%; 
 }
-.mujeress img{
+
+.mujeres1 {
     display: flex;
-    justify-content:center;
-    margin: 10px 5px 10px 5px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%; 
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
 }
-.mujeresss img{
+
+.mujeres2 {
     display: flex;
-    justify-content:center;
-    margin: 10px 5px 10px 5px;
-    width: 180px;
-    height: 180px;
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mujeres3 {
+    display: flex;
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mujeres1 img, .mujeres2 img, .mujeres3 img{
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%; 
 }
-.yo{
-    width: 100%;
+
+.yo {
     display: flex;
     flex-direction: column;
+    text-align: center;
     justify-content: center;
-    align-items: center;
+    margin: 15px 15px 15px 15px;
 }
+
+.yo h1 {
+    font-size: x-large;
+}
+.yo h2 {
+    font-size: x-large;
+}
+.yo h3 {
+    font-size: x-large;
+}
+.yo h4 {
+    font-size: x-large;
+}
+.yo h5 {
+    font-size: x-large;
+}
+.yo h6 {
+    font-size: x-large;
+}
+
 
 footer{
     display: flex;
-    width: 100%;
-    height: 50px;
+    margin: 5px 0px 5px 0px;
     justify-content:center
 }
 footer p{
-    font-family:"Honk", system-ui; tamaño-óptico-de-fuente: automático; peso de fuente: 400; estilo de fuente: normal; configuración de variación de fuente: "MORF" 15, "SHLN" 50;
-    font-size:x-large;
+    font-family: cursive;
+    color: black;
+    font-size:large;
     text-align: center;
+}
+
+footer i{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    color: rgb(253, 44, 225);
 }
