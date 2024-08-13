@@ -1,247 +1,459 @@
+/* enlace para importar el tipo de letra de google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
 
+/* margen y relleno en 0 para toda la página */
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    /* el borde y relleno ya se incluyen en la medida indicada a la caja */
+    box-sizing: border-box;
+    /* border:solid 2px #E285FF; */
+
 }
 
+/* fondo de toda la pantalla */
 .imagenfondo {
     background-image: url(./Imagenes/fondo\ mujeres.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size:cover;
+    background-size: cover;
     height: 100%;
 }
 
+/*navegador del encabezado */
 header {
-    display: flex; 
-    flex-direction: row; 
-}
-  
-header img {
-    width: 150px; 
-    height: 150px;
-    filter: blur(1.1);
-    mix-blend-mode: multiply;
-    margin: 0px 0px 0px 0px;
-}
-
-header nav{
     display: flex;
-    width: 100%;
-    height: 150px;
-    background-color:  rgba(255, 192, 203, 0.911);
-    align-content: end;
- 
-}
-
-header ul {
-    list-style: none; 
-    display: flex; 
     flex-direction: row;
-}
-header ul a {
-    text-decoration: none;
-    display: flex;
-}
-header ul li {
-  display: flex; 
-  font-family:"Playwrite US Modern", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  color: black; 
-  margin: 100px 0px 0px 120px;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(255, 192, 213, 0.911);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-a li i{
-    display: flex;
-    font-size: large;
-    margin: 15px 15px 15px 15px;
-    color: blueviolet;
+.abrir-menú,
+.cerrar-menú {
+    display: none;
 }
 
-.bar a{
-    margin-right: 20px;
-    transition: all 300ms;
+/* logo */
+header img {
+    width: 140px;
+    height: 140px;
+    filter: blur (1.1);
+    mix-blend-mode: multiply;
 }
 
-.bar a:hover{
-    transform: scale(1.2, 1.2);
-}
-
-
-.poder-digital{
-   width: 100%;
-   margin: 30px 0px 0px 0px;
-   font-family: cursive; color: rgb(250, 55, 136);
-   font-size:medium;
-}
-
-.carrusel{
-    display: flex; justify-content: center; 
-    margin: 30px 0px 30px 0px;
-    background-image: url(./Imagenes/fondodigital.jpg); 
-}
-.carrusel img{
-    display: flex; width: 450px; height: 450px;
-}
-
-.presentación{
-    display: flex;
-    flex-direction: row; 
-}
-
-.caja{
+/* lista del encabezado */
+.nav .lista {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items:center;
-    margin: 25px 10px 25px 10px;
+    flex-direction: row;
+    justify-content: end;
+    list-style: none;
+    padding: 10px;
+    gap: 20px;
+    margin-top: 20px;
+    cursor: pointer;
 }
-.caja img{
+
+/* enlaces de la lista */
+.nav .lista a {
     display: flex;
-    width: 350px; 
-    height: 250px;
-    border-radius: 50px;
-    border-style:double; color:rgb(238, 13, 163);
-}
-.caja h1, h2, h3 {
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 60px;
+    text-decoration: none;
+    text-align: start;
     font-family: "Playwrite US Modern", cursive;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-}
-
-.caja h1 {
-    display: flex;
-    font-size: xx-large;
-    margin: 30px 0px 10px 0px;
-}
-.caja h2 {
-    display: flex;
-    font-size: xx-large;
-    margin: 30px 0px 10px 0px;
-}
-.caja h3 {
-    display: flex;
-    font-size: xx-large;
-    margin: 30px 0px 10px 0px;
-}
-
-.caja p{
-    display: flex;
+    color: black;
     font-size: small;
-    font-family: "Playwrite US Modern", cursive;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    text-align:start;
-    margin: 10px 10px 10px 10px;
-}
-button {
-    display: inline-flex;
-    justify-content: center;
-    width: 30px;
 }
 
-.somos{
-    text-align: center; font-family: "Playwrite US Modern", cursive; color: black; font-size: large; 
-    margin: 25px 10px 25px 10px;
-}
-
-.somos i{
+/* iconos en los enlaces de la lista */
+.nav .lista a i {
     display: flex;
+    font-size: medium;
+    padding: 5px;
+    color: rgb(250, 55, 136);
+}
+
+/* efectos de transición en los enlaces dando una pseudo clase ":" */
+.nav .lista a:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 300ms;
+    background-color: #e385ff46;
+}
+
+
+
+/* texto en movimiento */
+.poder-digital h1 {
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    font-family: cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(250, 55, 136);
     font-size: xx-large;
-    justify-content: center;
-    margin: 15px 15px 15px 15px;
-    color: blueviolet;
 }
 
-.id {
+/* carrusel con fondo */
+.carrusel {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(rgba(239, 175, 241, 0.5), rgba(241, 119, 188, 0.5)), url(./Imagenes/fondodigital.jpg);
+    margin: 0px 0px 30px 0px;
+}
+
+/* borde botones del carrusel 
+span .carousel-control-prev-icon{
+border:solid 10px #E285FF;
+}
+span .carousel-control-next-icon{
+    border:solid 10px #E285FF;  
+}
+
+/* imagenes de carrusel */
+.carrusel img {
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+
+/* contenedor sobre MD y mujeres con poder */
+.presentación {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aliceblue; */
+    width: 100%;
+    justify-content: center;
+}
+
+/* imagen y texto de MD y mujeres con poder */
+.caja {
+    padding: 15px;
+    gap: 50;
+}
+
+/* alineación div de las img */
+.caja .img {
     display: flex;
     justify-content: center;
 }
 
-.mujeres1 {
-    display: flex;
-    font-size: x-large;
+/* estilos de cada imagen de la presentación */
+.caja img {
+    width: 400px;
+    height: 250px;
+    border-radius: 80px;
+    border-style: double;
+    color: rgb(250, 55, 136);
+}
+
+/* estilos del titulo de MD y mujeres con poder */
+.caja h2 {
     font-family: "Playwrite US Modern", cursive;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 500;
     font-style: normal;
-}
-
-.mujeres2 {
-    display: flex;
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.mujeres3 {
-    display: flex;
-    font-size: x-large;
-    font-family: "Playwrite US Modern", cursive;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-
-.mujeres1 img, .mujeres2 img, .mujeres3 img{
-    display: flex;
-    justify-content: center;
-    margin: 5px 5px 5px 5px;
-    width: 170px;
-    height: 170px;
-    border-radius: 50%; 
-}
-
-.yo {
-    display: flex;
-    flex-direction: column;
+    font-size: xx-large;
     text-align: center;
-    justify-content: center;
-    margin: 15px 15px 15px 15px;
+    margin-top: 10px;
 }
 
-.yo h1 {
-    font-size: x-large;
-}
-.yo h2 {
-    font-size: x-large;
-}
-.yo h3 {
-    font-size: x-large;
-}
-.yo h4 {
-    font-size: x-large;
-}
-.yo h5 {
-    font-size: x-large;
-}
-.yo h6 {
-    font-size: x-large;
-}
-
-
-footer{
-    display: flex;
-    margin: 5px 0px 5px 0px;
-    justify-content:center
-}
-footer p{
+/* estilos del párrafo de MD y mujeres con poder */
+.caja p {
+    font-size: medium;
     font-family: cursive;
     color: black;
-    font-size:large;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: start;
+    margin-top: 20px;
+}
+
+/* alineacion del div asignado albotón */
+.caja .button {
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos botón muestra y oculta */
+.caja button {
+    background-color: #E285FF;
+    border-radius: 50px;
+    border-style: groove;
+}
+
+/* efectos botón muestra oculta */
+.caja button:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 300ms;
+    background-color: rgba(255, 192, 213, 0.911);
+}
+
+/* estilos icono del botón */
+.caja button i {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin: 15px;
+    color: rgb(250, 55, 136);
+}
+
+
+/* fondo de espacio seguro */
+.espacio-seguro {
+    background-image: url(./Imagenes/Fondo\ lap\ pink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+
+/* recuadro texto espacio seguro */
+.espacio-seguro .bienvenida {
+    background-color: rgba(250, 55, 136, 0.575);
+    border-radius: 20px;
+    border-style: groove;
+    border-color: #de71fffd;
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* titulo y parrafo de espacio seguro */
+.espacio-seguro .bienvenida h3 {
+    font-family: "Playwrite US Modern", cursive;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* estilos párrafo de bienvenida*/
+.espacio-seguro .bienvenida p {
+    font-family: cursive;
+    font-size: medium;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* recuadro de información */
+.espacio-seguro .bienvenida .info form {
+    width: 100%;
+    font-family: cursive;
+    font-size: medium;
+    display: flex;
+}
+
+/* colunnas información */
+.info .información {
+    width: 50%;
+    flex-direction: row;
+    padding: 0px 30px 30px 30px;
+}
+
+/* pie de página */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* texto del pie de página */
+footer p {
+    font-family: cursive;
+    color: black;
+    font-size: large;
     text-align: center;
 }
 
-footer i{
+/* estilos en los iconos del texto de pie de página */
+footer i {
     display: flex;
     justify-content: center;
-    margin: 0px 0px 0px 0px;
     color: rgb(253, 44, 225);
 }
+
+
+/* cambios a 950px */
+@media screen and (max-width:950px) {
+    header {
+        width: 100%;
+        height: 120px;
+    }
+
+    /* logo */
+    header img {
+        width: 110px;
+        height: 110px;
+    }
+
+    /* mostrar botón abrir */
+    .abrir-menú {
+        display: block;
+    }
+
+    /* cambios en el navegador */
+    .nav {
+        /* display: none; (de principio)*/
+        opacity: 0;   /*no mostrar la lista de la nav */
+        visibility: hidden;   /*no mostrar la lista de la nav */
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: rgba(255, 192, 213, 0.911);
+        padding: 10px;
+    }
+
+    /* clases para js */
+    .nav .visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* lista del navegador    */
+    .nav .lista {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    /* cambios al pasar por enlaces de la lista */
+    .nav .lista a:hover {
+        background-color: #E285FF;
+    }
+
+
+    /* menú hamburguesa */
+    .abrir-menú {
+        display: flex;
+        color: rgb(250, 55, 136);
+        border: #c10af8fd solid 2px;
+        background-color: #E285FF;
+        padding: 15px;
+        height: 40px;
+        justify-content: flex-end;
+    }
+    /* boton cerrar */
+    .cerrar-menú {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /*imágenes y parrafo más chicos de la presentación*/
+    .presentación img {
+        width: 300px;
+        height: 150px;
+    }
+    .presentación p {
+        font-size: small;
+    }
+
+    /*tamaño del recuadro de información*/
+    .espacio-seguro .bienvenida {
+        width: 70%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* cambios a los 750px de ancho */
+@media screen and (max-width:750px) {
+    .carrusel img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    /* presentación cambiando a columnas */
+    .presentación {
+        flex-direction: column;
+    }
+
+    /* tamaño del recuadro de información */
+    .espacio-seguro .bienvenida{
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer p, i{
+        font-size: medium;
+    }
+}
+
+
+/* cambios a los 600px */
+@media screen and (max-width:600px) {
+    /* letra más pequeña del párrafo de presentación */
+    .espacio-seguro .bienvenida p {
+        font-size: small;
+    }
+    
+    /* más marge hacia arriba de h */
+    .bienvenida h3{
+        margin-top: 20px;
+    }
+
+    /* tamaño de letra label */
+    .bienvenida label {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    /* cambios en margen y relleno del recuadro información */
+    .info .información {
+        padding: 0px 5px 5px 5px
+    }
+    .espacio-seguro .bienvenida {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    footer p, i{
+        font-size: smaller;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .carrusel img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* botón selec país más chico */
+    .información select{
+     width: 50%;
+    }
+
+    .bienvenida h3{
+        margin-top: 20px;
+     }
+}    
+   
+  

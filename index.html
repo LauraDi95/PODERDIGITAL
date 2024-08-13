@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script defer src="./main.js"></script>
+  <!-- enlace de iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <title>PODER DIGITAL</title>
+  <!-- enlace css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- enlace bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- enlace js -->
+  <script src="./main.js"></script>
+
+  <!-- enlace icono del titulo -->
+  <link rel="shorcut icon" type="image/x-icon" href="Imagenes/favicon logo.ico">
+
+  <title>Mujeres con Poder Digital</title>
 </head>
 
-
 <body class="imagenfondo">
-    <div class="container-fluid">
-    <header> 
-        <nav class="bar">
-            <ul><img src="./Imagenes/Espacio con poder MD.gif" alt="espacio con poder MD">
-            <a href="#nosotros"><li >¿Quiénes somos?<i class="bi bi-heart"></i></li></a>
-            <a href=""><li>¿Qué hacemos?<i class="bi bi-heart"></i></li></a>
-            <a href=""><li>Se parte de "Mujeres con poder"<i class="bi bi-heart"></i></li></a>
-            </ul>
-        </nav> 
-    </header>  
-    </div>
-     
-    <div class="container-md">
-    <div class="poder-digital"> 
-       <h1><marquee direction="left" scrollamount = "10px">¡ESPACIO CON PODER DIGITAL!</h1></marquee>
-    </div>
-    </div>
 
-    <div class="container-fluid">
+  <header>
+    <img src="./Imagenes/Logo MPD.gif" alt="espacio con poder MD">
+    <button id="abrir" class="abrir-menú"><i class="bi bi-list"></i></button>
+    <nav class="nav">
+      <button id="cerrar" class="cerrar-menú"><i class="bi bi-x-circle-fill"></i></button>
+      <ul class="lista">
+        <a href="#presentación">
+          ¿Quiénes somos?<i class="bi bi-heart"></i>
+        </a>
+        <a href="https://jamujerdigital.org/" target="_blank">
+          Mujer Digital<i class="bi bi-heart"></i>
+        </a>
+        <a href="https://www.jaworldwide.org/locations" target="_blank">
+          Junior Achievement<i class="bi bi-heart"></i>
+        </a>
+        <a href="#espacio-seguro">
+          Se parte de MPD<i class="bi bi-heart"></i>
+        </a>
+        <a href="index3.html" target="_blank" >
+          Salud digital<i class="bi bi-heart"></i>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="container-fluid">
+    <div class="poder-digital">
+      <h1>
+        <marquee direction="left" scrollamount="10px">¡MUJERES CON PODER DIGITAL! </marquee>
+      </h1>
+    </div>
+  </div>
+
+  <div class="container-fluid">
     <div class="carrusel">
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner" >
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./Imagenes/mujeresimparables.jpg"  alt="mujeresimparables">
+            <img src="./Imagenes/mujeresimparables.jpg" alt="mujeresimparables">
           </div>
           <div class="carousel-item">
             <img src="./Imagenes/fuertes.jpg" alt="fuertes">
           </div>
           <div class="carousel-item">
-            <img src="./Imagenes/suezurita.jpg"  alt="suezurita">
+            <img src="./Imagenes/suezurita.jpg" alt="suezurita">
           </div>
           <div class="carousel-item">
-            <img src="./Imagenes/poderosas.jpg"  alt="poderosas">
+            <img src="./Imagenes/poderosas.jpg" alt="poderosas">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -57,213 +86,131 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-    </div>
-    </div>
-    </div>
-
-    <div class="container-fluid">
-    <div class="presentación">
-        <div class="caja"> 
-            <img src="./Imagenes/mujer digital.jpeg" alt="Mujer Digital">
-            <h1>Mujer Digital</h1>
-            <div id="contenido1">
-             <p>¡Hola querido mundo digital!, soy Diana y orgullosamente formo parte de "Mujer Digital", un innovador programa de capacitación y empleabilidad creado por Junior Achievement Americas y el BID-Lab. Su objetivo es empoderar a las mujeres jóvenes de Latinoamérica a través de la educación en tecnología y desarrollo de habilidades socioemocionales, preparándolas para carreras en áreas como la ciberseguridad, el cloud computing y desarrollo web.</p>
-            </div>
-            <button onclick="muestra_oculta ('contenido1')" form="contenido1">^</button>
-        </div>
-
-        <div class="caja">
-            <img src="./Imagenes/mujeres con poder.jpeg" alt="mujeres con poder">
-            <h2>Mujeres con poder</h2>
-             <div id="contenido2">
-             <p>Somos mujeres poderosas preparandonos en Mujer Digital para construir un futuro más bonito, desarrollar habilidades blandas y técnicas dentro de este mundo digital, sin límites ni barreras. Somos una red de apoyo en todo aspecto que nos conforma, orientandonos en adquirir conocimientos pero támbien apapachando nuestros sentimientos y emociones, brindando consejos de salud y bienestar en general.</p>
-            </div>
-            <button onclick="muestra_oculta ('contenido2')" form="contenido1">^</button>
-        </div>
-
-        <div class="caja">
-            <img src="./Imagenes/trabajo en equipo.jpeg" alt="trabajo en equipo">
-            <h3>Espacio para todas</h3>
-            <div id="contenido3">
-             <p>Este es un espacio de inclusión para todas las mujeres pero en especial para quienes participamos en este grandioso proyecto de Mujer Digital y que además somos emprendedoras y talentosas. Somos un espacio "mágico, cómico y digital" en el que podemos aprender unas de otras, nos motivamos para ir creciendo juntas, poder convivir, colaborar y ser una red de apoyo ante cualquier situación personal o laboral, física y emocioanal.</p>
-            </div>
-            <button onclick="muestra_oculta ('contenido3')" form="contenido3">^</button>
-        </div>
-    </div>
-    </div>
-
-    <div class="container-fluid">
-    <div id="nosotros">
-    <div class="somos">
-        <h1>¿Quiénes somos?<i class="bi bi-heart"></i></h1>
-    </div>
-    </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="mujeres1">
-                <div class="colum-2">
-                    <div class="yo">
-                      <img src="./Imagenes/Damm.jpg" alt="Damm">
-                      <h1>Damm</h1>
-                      <p></p>
-                   </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                      <img src="./Imagenes/Lau .jpg" alt="Lau">
-                      <h2>Lau</h2>
-                      <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Mai.jpg" alt="Mai">
-                     <h3>Mai</h3>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Alejandra Arlett.jpg" alt="Alejandra">
-                     <h4>Arlett</h4>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                      <img src="./Imagenes/Jess Avila.jpg" alt="Jess">
-                      <h5>Jess</h5>
-                      <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                      <img src="./Imagenes/Jocelyn.jpg" alt="Joselyn">
-                      <h6>Jocelyn</h6>
-                      <p></p>
-                   </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="mujeres2">
-                <div class="colum-2">  
-                    <div class="yo">
-                     <img src="./Imagenes/Michell Cousette.jpg" alt="Michelle">
-                     <h1>Cousette</h1>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Paty.jpg" alt="Paty"> 
-                     <h2>Paty</h2> 
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Vivi Villegas.jpg" alt="Vivi">
-                     <h3>Vivi</h3>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="/Imagenes/Yari.jpg" alt="Yari">
-                     <h4>Yari</h4>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Mafer.jpg" alt="Mafer">
-                     <h5>Mafer</h5>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Mayte.jpg" alt="Mayte">
-                     <h6>Mayte</h6>
-                     <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-                
-        <div class="row">
-            <div class="mujeres3">
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Katty .jpg" alt="Katty">
-                     <h1>Katty</h1>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Mely.jpg" alt="Mely">
-                     <h2>Mely</h2>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Patss.jpg" alt="Patss">
-                     <h3>Patss</h3>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Diana.jpg" alt="Diana">
-                     <h4>Diana</h4>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Aída.jpg" alt="Aída">
-                     <h5>Aída</h5>
-                     <p></p>
-                    </div>
-                </div>
-
-                <div class="colum-2">
-                    <div class="yo">
-                     <img src="./Imagenes/Blanca.jpg" alt="Blanca">
-                     <h5>Blanca</h5>
-                     <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <footer>
-      <div class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-5" >
-      <p><i class="bi bi-stars"></i>¡Este espacio está hecho con mucho amor, inspiración y motivación por Diana Laura Villafán Juárez!<i class="bi bi-suit-heart-fill"></i></p>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <div class="presentación" id="presentación">
+    <div class="caja">
+      <div class="img">
+        <img src="./Imagenes/mujer digital.jpeg" alt="Mujer Digital">
+      </div>
+      <h2>Mujer Digital</h2>
+      <div id="contenido2">
+        <p>¡Hola querido mundo digital!, soy Diana y orgullosamente formo parte de "Mujer Digital", un innovador
+          programa de capacitación y empleabilidad creado por la asociación de <a href="https://site.jaamericas.org/initiat" target="_blank">Junior Achievement Americas</a> y el <a href="https://www.iadb.org/es/quienes-somos/acerca-del-bid" target="_blank">BID-Lab.</a> Su objetivo es
+          empoderar a las mujeres jóvenes de Latinoamérica a través de la educación en tecnología y desarrollo de
+          habilidades socioemocionales, preparándolas para carreras en áreas como la ciberseguridad, el cloud
+          computing
+          y desarrollo web.
+        </p>
+      </div>
+      <div class="button">
+        <button onclick="muestra_oculta ('contenido2')" form="contenido2">
+          <i class="bi bi-hand-index-thumb"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="caja">
+      <div class="img">
+        <img src="./Imagenes/mujeres con poder.jpeg" alt="mujeres con poder">
+      </div>
+      <h2>Mujeres con poder</h2>
+      <div id="contenido1">
+        <p>Una mujer con poder se desarrolla en
+          habilidades blandas y técnicas dentro de este mundo digital, sin límites ni barreras. Forma parte de una red
+          de apoyo
+          en todo aspecto, orienta en adquirir conocimientos pero támbien es capaz de apapachar
+          sentimientos y emociones, porque aquí "la que puede puede y la
+          que no la apoyamos", es el lema que nos caracteriza porque el apoyo mutuo, la admiración e inspiración nos
+          enriquece como sociedad.
+        </p>
+      </div>
+      <div class="button">
+        <button onclick="muestra_oculta ('contenido1')" form="contenido1">
+          <i class="bi bi-hand-index-thumb"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="espacio-seguro" id="espacio-seguro">
+    <div class="bienvenida">
+      <h3>Bienvenida</h3>
+      <p>Te invito a conocer un espacio seguro y a conocer mujeres con las que te aseguro lograrás conectar, porque
+        ¡desde ya! tenemos algo en común y es el ser ¡mujeres con poder digital!.
+      </p>
+
+
+      <div class="info">
+        <form action="">
+          <div class="información">
+            <p>¿Perteneces al programa de Mujer Dijital?</p>
+            <input type="radio" name="si" value="si" id="si">Si
+            <input type="radio" name="No" value="No" id="no">No
+            <p>¿A qué capacitación técnica perteneces?</p>
+            <input type="radio" name="capacitación técnica"
+              value="Introducción al coding, Desarrollo web y Cloud computing"
+              id="Introducción al coding, Desarrollo web y Cloud computing">Introducción al coding, Desarrollo web y
+            Cloud
+            computing <br>
+            <input type="radio" name="capacitación técnica" value="Ciberseguridad" id="Ciberseguridad">Ciberseguridad
+          </div>
+
+          <div class="información">
+            <p>¿A qué generación perteneces?</p>
+            <label for="Generación">Generación:</label>
+            <select name="generación" id="generación">
+              <option value="Pimera">Primera</option>
+              <option value="Segunda">Segunda</option>
+              <option value="Tercera">Tercera</option>
+              <option value="Cuarta">Cuarta</option>
+              <option value="Quinta">Quinta</option>
+            </select>
+
+
+            <p>¿Cuál es tu grupo?</p>
+            <label for="Grupo">Grupo:</label>
+            <select name="grupo" id="grupo">
+              <option value="41">41</option>41
+              <option value="42">42</option>42
+              <option value="43">43</option>43
+              <option value="44">44</option>44
+              <option value="45">45</option>45
+            </select>
+
+            <p>¿De qué país eres?</p>
+            <label for="País">País:</label>
+            <select name="país" id="País">País
+              <option value="México">México</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Honduras">Honduras</option>
+              <option value="El Salvador">El Salvador</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="p-3 text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-5">
+      <i class="bi bi-stars"></i>
+      <p>¡Este espacio está hecho con mucho amor, inspiración y motivación por Diana Laura
+        Villafán Juárez!
+      </p>
+      <i class="bi bi-suit-heart-fill"></i>
+    </div>
+  </footer>
+
+  <!-- enlace js bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
-</div>
+
 </html>

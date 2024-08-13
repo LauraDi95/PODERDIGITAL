@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Modern:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.imagenfondo {
+    background-image: url(./Imagenes/fondo\ mujeres.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 100%;
+}
+
+header {
+    display: flex; 
+    flex-direction: row; 
+}
+  
+header img {
+    width: 150px; 
+    height: 150px;
+    filter: blur (1.1);
+    mix-blend-mode: multiply;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color:  rgba(255, 192, 203, 0.911);
+}
+
+header ul {
+    list-style: none; 
+    display: flex; 
+    flex-direction: row;
+}
+header ul a {
+    text-decoration: none;
+    text-align: center;
+}
+header ul li {
+  display: flex; 
+  font-family:"Playwrite US Modern", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: black; 
+  font-size: medium;
+  text-align: start;
+  margin: 80px 0px 0px 160px;
+}
+
+a li i{
+    display: flex;
+    font-size: large;
+    color: blueviolet;
+    margin: 10px 10px 10px 10px
+}
+
+.bar a{
+    margin-right: 20px;
+    transition: all 300ms;
+}
+
+.bar a:hover{
+    transform: scale(1.3, 1.3);
+}
+
+
+.texto-movimiento{
+   width: 100%;
+   margin: 50px 0px 50px 0px;
+   font-family: cursive; color: rgb(250, 55, 136);
+   font-size:medium;
+}
+
+.caja{
+    display: flex;
+    width: 100%;
+    flex-direction:column;
+    align-items:center;
+}
+
+.caja img{
+    display: flex;
+    width: 350px; 
+    height: 250px;
+    border-radius: 200px;
+    border-style:double; color:rgb(238, 13, 163);
+}
+.caja h1 {
+    display: flex;
+    font-size: xx-large;
+    margin: 30px 0px 10px 0px;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style:normal;
+}
+
+.caja p{
+    display: flex;
+    font-size: small;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align:start;
+    margin: 10px 10px 10px 10px;
+}
+
+
+/* estilos botón muestra y oculta */
+.caja button {
+    background-color: #E285FF;
+    border-radius: 50px;
+    border-style:groove;
+
+}
+
+/* efectos botón muestra oculta */
+.caja button:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 300ms;
+    background-color: rgba(255, 192, 213, 0.911);
+}
+
+/* estilos icono del botón */
+.caja button i{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin: 15px;
+    color: rgb(248, 34, 177);
+}
+
+.somos h1{
+    text-align: center; font-family: "Playwrite US Modern", cursive; color: black; font-size: xx-large; 
+    margin: 100px 0px 0px 0px
+}
+
+.somos i{
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    margin: 15px 15px 15px 15px;
+    color: blueviolet;
+}
+
+.row .mujeres1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row .mujeres2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row .mujeres3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.row .mujeres4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.mujeres1 {
+    display: flex;
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mujeres2 {
+    display: flex;
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mujeres3 {
+    display: flex;
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mujeres4 {
+    display: flex;
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.mujeres1 img, .mujeres2 img, .mujeres3 img, .mujeres4 img{
+    display: flex;
+    justify-content: center;
+    margin: 15px 15px 15px 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+}
+
+.yo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+}
+
+.yo h1 {
+    font-size: x-large;
+}
+.yo h2 {
+    font-size: x-large;
+}
+.yo h3 {
+    font-size: x-large;
+}
+.yo h4 {
+    font-size: x-large;
+}
+.yo h5 {
+    font-size: x-large;
+}
+
+.final{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.final h1{
+    font-family: cursive; color: black;
+    font-size: xx-large;
+    justify-content: center;
+}
+
+.final p{
+    font-family: cursive;
+    font-size: x-large;
+    justify-content: flex-start;
+}
+
+
+
+footer{
+    display: flex;
+    margin: 5px 0px 5px 0px;
+    justify-content:center
+}
+footer p{
+    font-family: cursive;
+    color: black;
+    font-size:large;
+    text-align: center;
+}
+
+footer i{
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    color: rgb(253, 44, 225);
+}
