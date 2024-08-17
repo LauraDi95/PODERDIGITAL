@@ -88,10 +88,25 @@ a li i{
     font-size:xx-large;
 }
 
-video {
-    display: flex;
+.cuerpo-mente-corazón img{
     width: 300px;
-    height: 300px;
-    justify-content:center
+    
+}
 
+.Tuli {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    gap:50px
+}
+
+.Tuli video{
+    justify-content:space-between;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+.Tuli p{
+    padding: 50px;
+    width: 40%;
 }

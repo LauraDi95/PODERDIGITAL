@@ -7,7 +7,7 @@
     padding: 0;
     /* el borde y relleno ya se incluyen en la medida indicada a la caja */
     box-sizing: border-box;
-    /* border:solid 2px #E285FF; */
+    /* border:solid 2px white; */
 
 }
 
@@ -26,12 +26,14 @@ header {
     flex-direction: row;
     width: 100%;
     height: 150px;
-    background-color: rgba(255, 192, 213, 0.911);
+    background-color: rgb(252, 207, 215); 
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    border-radius: 0px 0px 50px 50px;
 }
 
+/* menú hamburguesa no visible */
 .abrir-menú,
 .cerrar-menú {
     display: none;
@@ -41,6 +43,7 @@ header {
 header img {
     width: 140px;
     height: 140px;
+    border-radius: 50px;
     filter: blur (1.1);
     mix-blend-mode: multiply;
 }
@@ -63,7 +66,6 @@ header img {
     display: flex;
     flex-direction: row;
     padding: 5px;
-    margin-top: 60px;
     text-decoration: none;
     text-align: start;
     font-family: "Playwrite US Modern", cursive;
@@ -71,6 +73,8 @@ header img {
     font-weight: 500;
     font-style: normal;
     color: black;
+    border: solid 1px white;
+    border-radius: 50px;
     font-size: small;
 }
 
@@ -87,6 +91,7 @@ header img {
     transform: scale(1.2, 1.2);
     transition: all 300ms;
     background-color: #e385ff46;
+    font-weight:bolder;
 }
 
 
@@ -94,12 +99,13 @@ header img {
 /* texto en movimiento */
 .poder-digital h1 {
     width: 100%;
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 20px 0px;
     font-family: cursive;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     color: rgb(250, 55, 136);
+    background-color: rgba(255, 255, 255, 0.604);
     font-size: xx-large;
 }
 
@@ -110,15 +116,9 @@ header img {
     justify-content: space-around;
     background: linear-gradient(rgba(239, 175, 241, 0.5), rgba(241, 119, 188, 0.5)), url(./Imagenes/fondodigital.jpg);
     margin: 0px 0px 30px 0px;
+
 }
 
-/* borde botones del carrusel 
-span .carousel-control-prev-icon{
-border:solid 10px #E285FF;
-}
-span .carousel-control-next-icon{
-    border:solid 10px #E285FF;  
-}
 
 /* imagenes de carrusel */
 .carrusel img {
@@ -153,7 +153,7 @@ span .carousel-control-next-icon{
 .caja img {
     width: 400px;
     height: 250px;
-    border-radius: 80px;
+    border-radius: 200px;
     border-style: double;
     color: rgb(250, 55, 136);
 }
@@ -179,6 +179,10 @@ span .carousel-control-next-icon{
     font-style: normal;
     text-align: start;
     margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid 2px#E285FF;
+    background-color: rgba(255, 255, 255, 0.44);
 }
 
 /* alineacion del div asignado albotón */
@@ -190,6 +194,7 @@ span .carousel-control-next-icon{
 /* estilos botón muestra y oculta */
 .caja button {
     background-color: #E285FF;
+    border: solid 1px rgb(250, 55, 136);;
     border-radius: 50px;
     border-style: groove;
 }
@@ -231,33 +236,42 @@ span .carousel-control-next-icon{
     border-style: groove;
     border-color: #de71fffd;
     width: 70%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* titulo y parrafo de espacio seguro */
 .espacio-seguro .bienvenida h3 {
     font-family: "Playwrite US Modern", cursive;
     font-size: x-large;
-    color: white;
+    color: rgba(255, 255, 255, 0.849);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.bienvenida .te-invito{
+    background-color: rgba(255, 255, 255, 0.875);
 }
 
 /* estilos párrafo de bienvenida*/
 .espacio-seguro .bienvenida p {
     font-family: cursive;
     font-size: medium;
-    color: white;
+    color: black;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* background-color: rgba(255, 255, 255, 0.446); */
 }
+
+
 
 /* recuadro de información */
 .espacio-seguro .bienvenida .info form {
     width: 100%;
     font-family: cursive;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.446);
     font-size: medium;
     display: flex;
 }
@@ -266,7 +280,25 @@ span .carousel-control-next-icon{
 .info .información {
     width: 50%;
     flex-direction: row;
-    padding: 0px 30px 30px 30px;
+    padding: 0px 10px;
+}
+
+.info .ir a{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.info .ir button:hover{
+    background-color: #e385ff8e;
+}
+
+
+ /* PENDIENTE */
+.info .información input:active{
+    background-color: pink;
 }
 
 /* pie de página */
@@ -288,12 +320,12 @@ footer p {
 footer i {
     display: flex;
     justify-content: center;
-    color: rgb(253, 44, 225);
+    color: rgb(250, 55, 136);
 }
 
 
-/* cambios a 950px */
-@media screen and (max-width:950px) {
+/* cambios a 960px */
+@media screen and (max-width:960px) {
     header {
         width: 100%;
         height: 120px;
@@ -313,17 +345,17 @@ footer i {
     /* cambios en el navegador */
     .nav {
         /* display: none; (de principio)*/
-        opacity: 0;   /*no mostrar la lista de la nav */
-        visibility: hidden;   /*no mostrar la lista de la nav */
+        /* opacity: 0;   no mostrar la lista de la nav */
+        /* visibility: hidden;   no mostrar la lista de la nav */
 
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 10px;
         position: absolute;
-        top: 0px;
+        top: 100px;
         right: 0px;
-        background-color: rgba(255, 192, 213, 0.911);
+        background-color: rgb(252, 207, 215);
         padding: 10px;
     }
 
@@ -349,7 +381,7 @@ footer i {
     .abrir-menú {
         display: flex;
         color: rgb(250, 55, 136);
-        border: #c10af8fd solid 2px;
+        border: #ed4af9fd solid 1px;
         background-color: #E285FF;
         padding: 15px;
         height: 40px;
@@ -373,15 +405,19 @@ footer i {
 
     /*tamaño del recuadro de información*/
     .espacio-seguro .bienvenida {
-        width: 70%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+       width: 80%;
     }
 }
 
 
-/* cambios a los 750px de ancho */
-@media screen and (max-width:750px) {
+/* cambios a los 760px de ancho */
+@media screen and (max-width:760px) {
+    .nav {width: 20%;}
+    .nav .lista a{
+        font-size: small;
+       
+    }
+
     .carrusel img {
         width: 350px;
         height: 350px;
@@ -390,6 +426,11 @@ footer i {
     /* presentación cambiando a columnas */
     .presentación {
         flex-direction: column;
+    }
+    
+    /* cambio en tamaño de img */
+    .espacio-seguro {
+      background-image: url(./Imagenes/fondo\ lap\ pink\ 2.jpg);
     }
 
     /* tamaño del recuadro de información */
@@ -411,49 +452,53 @@ footer i {
     .espacio-seguro .bienvenida p {
         font-size: small;
     }
-    
-    /* más marge hacia arriba de h */
-    .bienvenida h3{
-        margin-top: 20px;
-    }
 
     /* tamaño de letra label */
     .bienvenida label {
         font-size: small;
     }
+     /* botón selec país más chico */
+     .información select{
+        width: 70%;
+    }
+
 }
 
 @media screen and (max-width:500px) {
 
-    /* cambios en margen y relleno del recuadro información */
-    .info .información {
-        padding: 0px 5px 5px 5px
-    }
     .espacio-seguro .bienvenida {
-        width: 100%;
-        margin: 20px 0px;
+        width: 95%;
+        margin: 10px;
+        }
     }
 
     footer p, i{
         font-size: smaller;
     }
 
-}
-
 @media screen and (max-width:450px) {
     .carrusel img {
         width: 250px;
         height: 250px;
     }
-    
-    /* botón selec país más chico */
-    .información select{
-     width: 50%;
+
+    .info .ir button{
+        font-size: small;
+    }
+    .espacio-seguro .bienvenida {
+        width: 95%;
+        margin: 5px;
     }
 
-    .bienvenida h3{
-        margin-top: 20px;
-     }
+    .espacio-seguro .bienvenida p {
+        text-align: left;
+    }
+
+    /* margen de arriba del botón ir */
+    .info .ir a{
+        margin-top: 5px;
+       }
+   
 }    
    
   

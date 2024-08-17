@@ -74,6 +74,7 @@ a li i{
    width: 100%;
    margin: 50px 0px 50px 0px;
    font-family: cursive; color: rgb(250, 55, 136);
+   background-color: #e385ff88;
    font-size:medium;
 }
 
@@ -137,9 +138,13 @@ a li i{
     color: rgb(248, 34, 177);
 }
 
+.nosotros{
+   border: solid 15px rgb(248, 34, 177);
+   margin: 50px 150px;
+}
 .somos h1{
     text-align: center; font-family: "Playwrite US Modern", cursive; color: black; font-size: xx-large; 
-    margin: 100px 0px 0px 0px
+    margin: 20px 150px 20px 150px;
 }
 
 .somos i{
@@ -219,6 +224,7 @@ a li i{
     border-radius: 50%; 
 }
 
+
 .yo {
     display: flex;
     flex-direction: column;
@@ -243,10 +249,84 @@ a li i{
     font-size: x-large;
 }
 
+.desarrollo-web{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.652);
+    border: solid 3px #E285FF;
+    
+}
+.desarrollo-web h3{
+    font-size: x-large;
+    font-family: "Playwrite US Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(238, 13, 163);
+    font-weight: bold;
+    width: 100%;
+}
+
+.dw{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+.dw p{
+    width: 60%;
+    height: 500px;
+    font-family: cursive;
+    font-size: medium;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.571);
+    margin: 20px;
+    padding: 70px;
+    border-radius: 30px;
+    border: solid 5px #e385ff92;
+}
+
+.dw img{
+    width: 40%;
+    height: 500px;
+}
+
+.Convivencias{
+    width: 100%;
+    padding: 50px 250px;
+    text-align: center;
+}
+.Convivencias h6 {
+    font-size:xx-large;
+    font-family: "Playwrite US Modern", cursive;
+    color: rgb(238, 13, 163);
+    font-weight: bold;
+}
+.Convivencias p{
+    font-family: cursive;
+    font-size: medium;
+    background-color: #e385ff5f;
+    border: solid 2px white;
+    padding: 10px;
+}
+.Convivencias img{
+    border-radius: 450px;
+}
+
+.picnic{
+/* background-color: white; */
+}
+
 .final{
     display: flex;
     flex-direction: row;
     padding: 50px;
+    gap: 20px;
 }
 
 .final h1{
@@ -280,4 +360,59 @@ footer i{
     justify-content: center;
     margin: 0px 0px 0px 0px;
     color: rgb(253, 44, 225);
+}
+
+
+
+@media screen and (max-width:1070px){
+
+   .dw {
+    flex-direction: column;
+    margin: 0px;
+    text-align: initial;
+    }
+    .dw img{
+        width: 100%;
+    }
+    .dw p {
+        width: 100%;
+        padding: 0px;
+    }
+    header ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    header ul li{
+        margin: 0px;
+    }
+
+    .Convivencias{
+        width: 100%;
+        padding: 50px 150px;
+    }
+}
+@media screen and (max-width:930px){
+    .mujeres1 img, .mujeres2 img, .mujeres3 img, .mujeres4 img{
+        width: 70px;
+        height: 70px;}
+  
+    }
+@media screen and (max-width:550px) {
+    .mujeres1 img, .mujeres2 img, .mujeres3 img, .mujeres4 img{
+        margin: 0px;
+    }
+    .yo h1, .yo h2, .yo h3,.yo h4, .yo h5{
+        font-size: small;
+    }
+    .Convivencias{
+        width: 100%;
+        padding: 50px 50px;
+    }
+
+    .dw p, .Convivencias p, .final p{
+        font-size: small;
+    }
+    .final{
+        flex-direction: column;
+    }
 }
